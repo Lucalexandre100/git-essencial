@@ -1,0 +1,39 @@
+Link com comandos de apoio para GIT
+	http://rogerdudler.github.io/git-guide/index.pt_BR.html
+
+1 - Configurar os seus dados no git:
+	git config --global user.email "you@example.com"
+  	git config --global user.name "Your Name"
+
+2 - Clonar repositorio remoto:
+	git clone https://github.com/puikinsh/gentelella   (exemplo)
+
+3 - Atualizar repositório (dentro do diretório versionado):
+	git pull origin master
+
+-----------------------------------------------------------------------------------
+
+4 - Para criar um novo repositorio local:
+	// para iniciar o repositório
+	git init
+
+	// para adicionar o versionamento aos arquivos criados ou  modificados
+	git add *
+
+	// para listar os arquivos (se estão versionados ou não)
+	git status
+	
+	// para determinar o repositorio remoto (destino dos arquivos)
+	git remote add origin <servidor>
+
+	// para efetivar as alterações no repositório local
+	git commit -m "comentário_exemplo"
+
+	// enviar os arquivos commitados para o repositório remoto
+	git push origin master
+
+5 - Comandos GIT Extras:
+	Criar arquivo .gitignore (listar arquivos a serem ignorados no versionamento)
+	Entrar no site: https://www.gitignore.io/
+	Escolher o tipo de arquivo, clicar em "Create" e salvar o arquivo exibido.
+	Este arquivo .gitignore deve ester na raiz do projeto versionado
